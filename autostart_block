@@ -1,0 +1,21 @@
+#################
+### AUTOSTART ###
+#################
+
+# Autostart necessary processes (like notifications daemons, status bars, etc.)
+# Or execute your favorite apps at launch like this:
+
+# exec-once = $terminal
+# exec-once = nm-applet &
+# exec-once = waybar & hyprpaper & firefox
+exec-once = dinitctl setenv WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR
+exec-once = dinitctl start hyprpolkitagent
+exec-once = dinitctl start waybar
+exec-once = dinitctl start udiskie
+exec-once = dinitctl start nm-applet
+exec-once = dinitctl start blueman-applet
+exec-once = dinitctl start swaync
+exec-once = dinitctl start swww
+exec-once = ~/scripts/music_notifier.sh &
+exec-once = ~/scripts/wallpaper.sh &
+exec-once = vdu_controls --no-splash --system-tray &
