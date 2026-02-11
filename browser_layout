@@ -1,0 +1,9 @@
+# web browser window rule
+
+windowrule {
+    name = browser-layout
+    match:class = ^(firefox|chromium)$
+    min_size = 1800 1000
+    max_size = 1920 1080
+    persistent_size = on
+}
