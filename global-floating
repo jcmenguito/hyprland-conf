@@ -1,0 +1,7 @@
+# Global Floating
+
+windowrule {
+    name = global-floating-mode
+    match:class = .*
+    float = yes
+}
