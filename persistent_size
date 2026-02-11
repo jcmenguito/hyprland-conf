@@ -1,0 +1,8 @@
+# Persistent Size
+
+windowrule {
+    name = persistent-size
+    match:class = .*
+    persistent_size = on
+    center = on
+}
