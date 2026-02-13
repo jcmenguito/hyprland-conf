@@ -16,6 +16,8 @@ exec-once = dinitctl start nm-applet
 exec-once = dinitctl start blueman-applet
 exec-once = dinitctl start swaync
 exec-once = dinitctl start swww
-exec-once = ~/scripts/music_notifier.sh &
-exec-once = ~/scripts/wallpaper.sh &
-exec-once = vdu_controls --no-splash --system-tray &
+exec-once = dinitctl start music-notifier
+# Comment out the line below if you don't want animated wallpapers
+exec-once = dinitctl start animatedWall
+# Uncomment the line below if you want static wallpapers
+#exec-once = dinitctl start wallpaper
